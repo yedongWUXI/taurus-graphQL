@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaituo.comparison.back.core.mapper.shop.ShopMapper">
+  <resultMap id="BaseResultMap" type="com.kaituo.comparison.back.core.entity.shop.Shop">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="shopname" jdbcType="VARCHAR" property="shopname" />
+    <result column="count" jdbcType="INTEGER" property="count" />
+    <result column="createDate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="updateDate" jdbcType="TIMESTAMP" property="updatedate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, shopname, `count`, createDate, updateDate
+  </sql>
+
+
+  <select id="selectAll"  resultType="map">
+    SELECT * FROM  shop;
+  </select>
+
+
+
+
+</mapper>
