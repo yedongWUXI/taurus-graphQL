@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaituo.comparison.back.core.mapper.graphQL.BookMapper">
+  <resultMap id="BaseResultMap" type="com.kaituo.comparison.back.core.entity.graphQL.Book">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="author_id" jdbcType="BIGINT" property="authorId" />
+    <result column="isbn" jdbcType="VARCHAR" property="isbn" />
+    <result column="page_count" jdbcType="INTEGER" property="pageCount" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, created_time, updated_time, title, author_id, isbn, page_count, price
+  </sql>
+</mapper>
